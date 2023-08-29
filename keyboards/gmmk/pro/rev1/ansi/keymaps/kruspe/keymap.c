@@ -206,6 +206,7 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
             rgb_matrix_set_color(LEB_TAB, RGB_ZERG);
             rgb_matrix_set_color(LED_LSFT, RGB_ZERG);
             rgb_matrix_set_color(LED_LCTL, RGB_ZERG);
+            rgb_matrix_set_color(LED_LALT, RGB_ZERG);
             rgb_matrix_set_color(LED_SPC, RGB_ZERG);
 
             rgb_matrix_set_color(LED_FN, RGB_RED);

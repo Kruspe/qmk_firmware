@@ -225,6 +225,18 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
             rgb_matrix_set_color(LED_U, RGB_RED);
             break;
     }
+
+    led_t led_state = host_keyboard_led_state();
+    if (led_state.caps_lock) {
+        rgb_matrix_set_color(LED_L1, RGB_RED);
+        rgb_matrix_set_color(LED_L2, RGB_RED);
+        rgb_matrix_set_color(LED_L3, RGB_RED);
+        rgb_matrix_set_color(LED_L4, RGB_RED);
+        rgb_matrix_set_color(LED_L5, RGB_RED);
+        rgb_matrix_set_color(LED_L6, RGB_RED);
+        rgb_matrix_set_color(LED_L7, RGB_RED);
+        rgb_matrix_set_color(LED_CAPS, RGB_RED);
+    }
     return false;
 };
 

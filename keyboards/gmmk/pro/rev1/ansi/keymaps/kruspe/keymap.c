@@ -208,8 +208,6 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
             rgb_matrix_set_color(LED_LCTL, RGB_ZERG);
             rgb_matrix_set_color(LED_LALT, RGB_ZERG);
             rgb_matrix_set_color(LED_SPC, RGB_ZERG);
-
-            rgb_matrix_set_color(LED_FN, RGB_RED);
             break;
         case _WIN_FN2:
             rgb_matrix_set_color_all(RGB_OFF);

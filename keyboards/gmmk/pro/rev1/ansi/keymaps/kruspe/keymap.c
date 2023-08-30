@@ -117,12 +117,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_FN1] = LAYOUT(
-        KC_NO, KC_NO, KC_NO,    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,          KC_NO,
-        KC_NO, KC_NO, KC_NO,    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,          KC_NO,
-        KC_NO, KC_NO, TO(_WIN), KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,    KC_NO, KC_NO, KC_NO, KC_NO, QK_BOOT,        KC_NO,
-        KC_NO, KC_NO, TO(_SC2), KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,    KC_NO, KC_NO, KC_NO,        KC_NO,          KC_NO,
-        KC_NO,        KC_NO,    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, TO(_MAC), KC_NO, KC_NO, KC_NO,        KC_NO,   KC_NO, KC_NO,
-        KC_NO, KC_NO, KC_NO,                         KC_NO,                         KC_NO, KC_NO, KC_NO, KC_MPRV, KC_NO, KC_MNXT
+        KC_NO, KC_NO, KC_NO,    KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO,    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,          KC_NO,
+        KC_NO, KC_NO, KC_NO,    KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO,    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,          KC_NO,
+        KC_NO, KC_NO, TO(_WIN), KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO,    KC_NO, KC_NO, KC_NO, KC_NO, QK_BOOT,        KC_NO,
+        KC_NO, KC_NO, TO(_SC2), KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO,    KC_NO, KC_NO, KC_NO,        KC_NO,          KC_NO,
+        KC_NO,        KC_NO,    KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, TO(_MAC), KC_NO, KC_NO, KC_NO,        KC_NO,   KC_NO, KC_NO,
+        KC_NO, KC_NO, KC_NO,                         KC_MPLY,                         KC_NO, KC_NO, KC_NO, KC_MPRV, KC_NO, KC_MNXT
     ),
 };
 // clang-format on

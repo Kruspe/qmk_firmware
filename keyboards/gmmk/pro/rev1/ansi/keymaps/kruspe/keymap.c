@@ -161,11 +161,20 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 #ifdef RGB_MATRIX_ENABLE
 #define RGB_ZERG 40, 1, 55
 
+layer_state_t layer_state_set_user(layer_state_t state) {
+    switch(get_highest_layer(layer_state)) {
+        case _WIN:
+            rgb_matrix_mode(RGB_MATRIX_CYCLE_LEFT_RIGHT);
+            break;
+        case _MAC:
+            rgb_matrix_mode(RGB_MATRIX_CYCLE_UP_DOWN);
+            break;
+    }
+    return state;
+}
+
 bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
     switch(get_highest_layer(layer_state)) {
-        case _MAC:
-            rgb_matrix_set_color_all(RGB_OFF);
-            break;
         case _SC2:
             rgb_matrix_set_color_all(RGB_OFF);
             rgb_matrix_set_color(LED_1, RGB_ZERG);

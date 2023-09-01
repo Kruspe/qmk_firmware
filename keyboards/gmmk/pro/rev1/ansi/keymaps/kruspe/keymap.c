@@ -161,6 +161,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 #ifdef RGB_MATRIX_ENABLE
 #define RGB_ZERG 40, 1, 55
 
+void keyboard_post_init_user(void) {
+    rgb_matrix_mode(RGB_MATRIX_CYCLE_LEFT_RIGHT);
+};
+
 layer_state_t layer_state_set_user(layer_state_t state) {
     switch(get_highest_layer(layer_state)) {
         case _WIN:

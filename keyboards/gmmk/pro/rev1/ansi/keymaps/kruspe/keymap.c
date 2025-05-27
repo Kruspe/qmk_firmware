@@ -163,15 +163,18 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 void keyboard_post_init_user(void) {
     rgb_matrix_mode(RGB_MATRIX_CYCLE_LEFT_RIGHT);
+    rgb_matrix_set_speed(10);
 };
 
 layer_state_t layer_state_set_user(layer_state_t state) {
     switch(get_highest_layer(layer_state)) {
         case _WIN:
             rgb_matrix_mode(RGB_MATRIX_CYCLE_LEFT_RIGHT);
+            rgb_matrix_set_speed(5);
             break;
         case _MAC:
             rgb_matrix_mode(RGB_MATRIX_CYCLE_ALL);
+            rgb_matrix_set_speed(10);
             break;
     }
     return state;
@@ -247,6 +250,7 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
         rgb_matrix_set_color(LED_L5, RGB_RED);
         rgb_matrix_set_color(LED_L6, RGB_RED);
         rgb_matrix_set_color(LED_L7, RGB_RED);
+        rgb_matrix_set_color(LED_L8, RGB_RED);
         rgb_matrix_set_color(LED_CAPS, RGB_RED);
     }
     return false;
